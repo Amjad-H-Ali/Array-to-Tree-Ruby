@@ -16,7 +16,9 @@ def array_to_tree array, index=0
 	{
 		:value => array[index],
 
-		:left => array_to_tree(array, left)
+		:left => array_to_tree(array, left),
+
+		:right => array_to_tree(array, right)
 	}	
 end	
 
