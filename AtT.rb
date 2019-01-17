@@ -11,5 +11,12 @@ def array_to_tree array, index=0
 	# Left and right children node indexes
 	left = (index * 2) + 1
 
-	right = left + 1	
+	right = left + 1
+
+	{
+		:value => array[index]
+	}	
 end	
+
+
+pp array_to_tree [10, 9, 8, 7, 6 ,5, 4, 3, 2, 1, 0]
